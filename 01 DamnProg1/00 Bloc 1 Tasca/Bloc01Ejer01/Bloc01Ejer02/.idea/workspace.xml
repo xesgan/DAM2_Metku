@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f016923-5a02-45ae-aa40-deae85cdce0a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Bloc01Ejer01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bloc01Ejer01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bloc01Ejer01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bloc01Ejer01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bloc01Ejer01/Bloc01Ejer01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bloc01Ejer01/src/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "xesgan"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/xesgan/ProgDam1.git",
+    "accountId": "2765a2ec-c2a7-4953-ad96-088af69895eb"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2nDB4nZkxaIVV9eXHEviPy1KJuf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Metku/Documents/FPDAM_1/02 FP DAM 2/01 Programacion/00 Bloc 1 Tasca/Bloc01Ejer02",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Metku/Documents/FPDAM_1/02 FP DAM 2/01 Programacion/00 Bloc 1 Tasca/Bloc01Ejer01/Bloc01Ejer02/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f016923-5a02-45ae-aa40-deae85cdce0a" name="Changes" comment="" />
+      <created>1728497579160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728497579160</updated>
+      <workItem from="1728497580199" duration="63000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
