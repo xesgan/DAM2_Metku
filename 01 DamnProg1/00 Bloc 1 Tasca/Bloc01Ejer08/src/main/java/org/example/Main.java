@@ -35,7 +35,7 @@ public class Main {
         int seconds = sc.nextInt();
 
         int days = seconds / (24 * 3600);
-        seconds %= 24 * 3600; // Remaining seconds after calculating days
+        seconds %= 24 * 3600; // to rescue the seconds left after calculating the days
 
         int hours = seconds / 3600;
         seconds %= 3600;
