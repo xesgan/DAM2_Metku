@@ -31,6 +31,7 @@ public class Main {
         double area = width * height;
         System.out.println(area);
 
+        // Copied as it is in the page
         // Print the calculated perimeter using placeholders for values
         System.out.printf("Perimeter is 2*(%.1f + %.1f) = %.2f \n", height, width, perimeter);
 
