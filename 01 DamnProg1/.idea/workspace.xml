@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f150f42-624c-4679-8b80-e6adce809365" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer05/Bloc01Ejer05.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/01 Programacion.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer04/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bloc01Ejer04/Main.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/01 DamnProg1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer01/Bloc01Ejer02/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer03/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer03/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer04/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer04/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer05/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/00 Bloc 1 Tasca/Bloc01Ejer05/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -28,12 +27,12 @@
     &quot;assignee&quot;: &quot;xesgan&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/xesgan/ProgDam1.git&quot;,
-    &quot;accountId&quot;: &quot;2765a2ec-c2a7-4953-ad96-088af69895eb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/xesgan/DAM2_Metku.git",
+    "accountId": "2765a2ec-c2a7-4953-ad96-088af69895eb"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -46,10 +45,13 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Metku/Documents/FPDAM_1/02 FP DAM 2/01 Programacion/ProgDam1",
+    "last_opened_file_path": "C:/Users/Metku/Documents/FPDAM_1/02 FP DAM 2/01 DamnProg1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -89,6 +91,7 @@
       <workItem from="1728666178547" duration="69000" />
       <workItem from="1728666350331" duration="168000" />
       <workItem from="1728666563214" duration="10000" />
+      <workItem from="1728901313180" duration="624000" />
     </task>
     <servers />
   </component>
