@@ -28,8 +28,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce the product price: ");
         double price = sc.nextDouble();
+
         System.out.println("\nAmount: ");
         double amount = sc.nextDouble();
+
         double discount = 0.05;
         double unityFinalPrice = price * (1 * discount);
         double finalPrice = price - unityFinalPrice;
