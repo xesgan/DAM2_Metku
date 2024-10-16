@@ -48,19 +48,20 @@ public class ReceptorHijo {
                 char caracter = args[1].charAt(0);
                 contarCaracterOperacion(caracter);
                 break;
+            default:
+                System.out.println("Comando desconocido: " + comando);
+                System.out.println("Comandos disponibles: contar");
+                System.exit(1);
         }
+    }
 
-        // Leer el contenido de 'contenido.html'
+    public static void contarCaracterOperacion(char caracter) {
         String contenido = leerArchivo("contenido.html");
         if (contenido == null) {
             System.out.println("No se ha encontrado el archivo.");
             System.exit(1);
         }
-
-        // Contar las ocurrencias del caracter
         int conteo = contarCaracter(contenido, caracter);
-
-        // Devolver el resultado al proceso padre
         System.out.println(conteo);
     }
 }

@@ -85,6 +85,7 @@ public class emisorPadre {
                     "-cp",
                     "../psp_u2_RoigAlconElias_recursos/out/artifacts/psp_u2_RoigAlconElias_recursos_jar/psp_u2_RoigAlconElias_recursos.jar",
                     "org.example.ReceptorHijo",
+                    "2",
                     String.valueOf(caracter));
             pb.redirectErrorStream(true); // Combina stdout y stderr
 
@@ -131,7 +132,6 @@ public class emisorPadre {
                     carregarPaginaWeb();
                     break;
                 case 2:
-                    analizarNombreCaracter();
                     // Verificar si 'contenido.html' existe antes de analizar
                     File archivo = new File("contenido.html");
                     if (!archivo.exists()) {
