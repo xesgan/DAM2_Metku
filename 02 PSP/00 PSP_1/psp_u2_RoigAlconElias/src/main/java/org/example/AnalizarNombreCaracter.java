@@ -1,9 +1,8 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
+import static org.example.emisorPadre.contenidoHTML;
 import static org.example.emisorPadre.sc;
 
 public class AnalizarNombreCaracter {
@@ -13,7 +12,7 @@ public class AnalizarNombreCaracter {
         String input = sc.nextLine().trim();
 
         // Validar que el usuario haya escrito exactamente un caracter
-        if(input.length() != 1) {
+        if (input.length() != 1) {
             System.out.println("Entrada invalida. Debe ser solo un caracter.");
             return;
         }
@@ -24,29 +23,38 @@ public class AnalizarNombreCaracter {
         try {
             ProcessBuilder pb = new ProcessBuilder(
                     "java",
-                    "-cp",  // CLASSPATH como el profesor lo quiere
-                    "../psp_u2_RoigAlconElias_recursos/out/artifacts/psp_u2_RoigAlconElias_recursos_jar/psp_u2_RoigAlconElias_recursos.jar", // ruta relativa de donde esta tu jar
-                    "org.example.ReceptorHijo",  // este parametro es la clase donde quieres que vaya tu proceso
-                    "contar",  // y este es un comando que anyadi para que el proceso supiera que tenia que activar gracias a un switch
-                    String.valueOf(caracter));
+                    "-cp",
+                    "../psp_u2_RoigAlconElias_recursos/out/artifacts/psp_u2_RoigAlconElias_recursos_jar/psp_u2_RoigAlconElias_recursos.jar",
+                    "org.example.ReceptorHijo",  // Clase del proceso hijo
+                    "contar",  // Comando para que el proceso hijo sepa que debe contar el caracter
+                    String.valueOf(caracter));  // Pasar el caracter al proceso hijo
+
             pb.redirectErrorStream(true); // Combina stdout y stderr
 
             Process process = pb.start();
 
-            // Leer la salida del proceso hijo
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String linea;
-            StringBuilder resultado = new StringBuilder();
-            while ((linea = reader.readLine()) != null) {
-                resultado.append(linea).append("\n");
+            // Enviar el HTML al proceso hijo a través de la entrada estándar
+            try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
+                writer.write(contenidoHTML.toString());  // Enviar el HTML al hijo
+                writer.newLine();
+                writer.flush();
             }
 
-            int exitCode = process.waitFor();
-            if (exitCode == 0) {
-                System.out.println("Numero de veces que aparece " + caracter + " : " + resultado.toString().trim());
-            } else {
-                System.out.println("El proceso hijo finalizo con errores.");
-                System.out.println(resultado);
+            // Leer la salida del proceso hijo
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String linea;
+                StringBuilder resultado = new StringBuilder();
+                while ((linea = reader.readLine()) != null) {
+                    resultado.append(linea).append("\n");
+                }
+
+                int exitCode = process.waitFor();
+                if (exitCode == 0) {
+                    System.out.println("Número de veces que aparece " + caracter + " : " + resultado.toString().trim() + "\n\n\n");
+                } else {
+                    System.out.println("El proceso hijo finalizó con errores.");
+                    System.out.println(resultado);
+                }
             }
 
         } catch (IOException | InterruptedException e) {

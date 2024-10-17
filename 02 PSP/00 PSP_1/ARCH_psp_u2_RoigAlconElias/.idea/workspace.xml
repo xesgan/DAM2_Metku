@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a845e46b-0f56-4587-87e9-986a81a70a4a" name="Changes" comment="PSP 16/10/24 v3 Test">
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/AnalizarNombreCaracter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/AnalizarNombreCaracter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/CarregarPaginaWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/CarregarPaginaWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/SubstituirLletra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/SubstituirLletra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias/src/main/java/org/example/emisorPadre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/.idea/artifacts/psp_u2_RoigAlconElias_recursos_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/.idea/artifacts/psp_u2_RoigAlconElias_recursos_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/java/org/example/CarregarPaginaWebHijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/java/org/example/CarregarPaginaWebHijo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/java/org/example/ContarCaracterHijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/java/org/example/ContarCaracterHijo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/java/org/example/ReceptorHijo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/java/org/example/ReceptorHijo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psp_u2_RoigAlconElias_recursos/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;xesgan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/xesgan/DAM2_Metku.git&quot;,
+    &quot;accountId&quot;: &quot;2765a2ec-c2a7-4953-ad96-088af69895eb&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2nUCHNJNHSps4FVfZkXrWwG8piV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ExercicisMultiprocess1_ParellSenar.executor": "Run",
+    "Application.Programa.executor": "Run",
+    "Application.emisorPadre.executor": "Run",
+    "Application.psp_u2_RoigAlconElias.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Metku/Documents/FPDAM_1/02 FP DAM 2/02 PSP/00 PSP_1/psp_u2_RoigAlconElias",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="emisorPadre" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.emisorPadre" />
+      <module name="psp_u2_RoigAlconElias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.emisorPadre" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a845e46b-0f56-4587-87e9-986a81a70a4a" name="Changes" comment="" />
+      <created>1729018180060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729018180060</updated>
+      <workItem from="1729018181079" duration="4796000" />
+      <workItem from="1729023818748" duration="3192000" />
+      <workItem from="1729061325803" duration="7065000" />
+      <workItem from="1729070711252" duration="27978000" />
+      <workItem from="1729153220177" duration="3812000" />
+      <workItem from="1729173987888" duration="41000" />
+      <workItem from="1729174055038" duration="226000" />
+      <workItem from="1729174291981" duration="5039000" />
+    </task>
+    <task id="LOCAL-00001" summary="PSP 16/10/24 v1">
+      <option name="closed" value="true" />
+      <created>1729080242869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729080242869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="PSP 16/10/24 v2 P1Fin">
+      <option name="closed" value="true" />
+      <created>1729081825690</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729081825690</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PSP 16/10/24 v3 Test">
+      <option name="closed" value="true" />
+      <created>1729106798644</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729106798644</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PSP 16/10/24 v1" />
+    <MESSAGE value="PSP 16/10/24 v2 P1Fin" />
+    <MESSAGE value="PSP 16/10/24 v3 Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="PSP 16/10/24 v3 Test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

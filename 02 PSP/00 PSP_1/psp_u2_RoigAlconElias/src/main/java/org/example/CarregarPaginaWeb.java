@@ -13,6 +13,7 @@ public class CarregarPaginaWeb {
 
     public static void carregarPaginaWeb() throws IOException, InterruptedException {
         System.out.println("Introduce la URL de la página web (debe comenzar con http:// o https://):");
+        System.out.println("Ejemplo: https://paucasesnovescifp.cat/");
         String urlWeb = sc.nextLine().trim();
 
         // Validar la URL
@@ -29,7 +30,7 @@ public class CarregarPaginaWeb {
             System.out.println("Contenido HTML descargado: ");
             System.out.println(contenidoHTML);  // Mostrar el contenido HTML
 
-            // El contenido HTML esta ya en una variable contenidoHTML
+            // El contenido HTML esta ya en una variable = contenidoHTML
 
         } catch (IOException | InterruptedException e) {
             System.out.println("Error al descargar el HTML");
@@ -44,6 +45,7 @@ public class CarregarPaginaWeb {
                 "org.example.ReceptorHijo",
                 "cargar");
         Process process = pb.start();
+        System.out.println("ID del proceso: " + process.pid());
 
         // Enviamos los datos al proceso hijo
         try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
@@ -53,7 +55,6 @@ public class CarregarPaginaWeb {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        process.waitFor();
 
         // Leemos la salida del proceso hijo
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
@@ -63,7 +64,6 @@ public class CarregarPaginaWeb {
             while ((linea = reader.readLine()) != null) {
                 content.append(linea).append("\n");
             }
-            process.waitFor();
 
             // Almacenamos el contenido HTML en la variable global
             contenidoHTML = content.toString();

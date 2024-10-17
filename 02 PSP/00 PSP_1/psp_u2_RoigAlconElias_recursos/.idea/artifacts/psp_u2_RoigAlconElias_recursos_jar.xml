@@ -3,6 +3,9 @@
     <output-path>$PROJECT_DIR$/out/artifacts/psp_u2_RoigAlconElias_recursos_jar</output-path>
     <root id="root">
       <element id="archive" name="psp_u2_RoigAlconElias_recursos.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/META-INF/MANIFEST.MF" />
+        </element>
         <element id="module-output" name="psp_u2_RoigAlconElias_recursos" />
       </element>
     </root>

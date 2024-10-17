@@ -32,7 +32,6 @@ public class SubstituirLletra {
                     letraOriginal,
                     nuevaLetra
             );
-            pb.redirectErrorStream(true);
 
             Process process = pb.start();
 

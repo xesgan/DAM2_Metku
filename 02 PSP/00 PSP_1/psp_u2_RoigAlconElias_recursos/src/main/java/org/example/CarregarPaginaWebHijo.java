@@ -15,7 +15,7 @@ public class CarregarPaginaWebHijo{
                 contenidoHTML.append(linea).append("\n");
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Error al leer el contenido: " + e.getMessage());
         }
         return contenidoHTML.toString();
     }
