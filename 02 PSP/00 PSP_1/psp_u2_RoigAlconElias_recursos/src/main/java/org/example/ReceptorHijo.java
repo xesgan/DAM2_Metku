@@ -52,6 +52,10 @@ public class ReceptorHijo {
                 String nuevaLetra = args[2];
                 realizarSustitucion(letraOriginal, nuevaLetra);
                 break;
+            case "leer":
+                String archivo = "encrypted.txt"; // Puedes cambiarlo si usas otro nombre de archivo
+                LeerEncryptedHijo.leerArchivoEncriptado(archivo);
+                break;
 
             default:
                 System.out.println("Comando desconocido: " + comando);

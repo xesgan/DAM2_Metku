@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import static org.example.AnalizarNombreCaracter.analizarNombreCaracter;
 import static org.example.CarregarPaginaWeb.carregarPaginaWeb;
+import static org.example.LeerEncryptedPadre.leerArchivo;
 import static org.example.SubstituirLletra.susbtituirLletra;
 
 public class emisorPadre {
@@ -48,6 +49,7 @@ public class emisorPadre {
                     susbtituirLletra();
                     break;
                 case 4:
+                    leerArchivo();
                     break;
                 case 5:
                     break;
