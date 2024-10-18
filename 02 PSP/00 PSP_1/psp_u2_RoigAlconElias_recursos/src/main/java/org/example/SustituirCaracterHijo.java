@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class SubstituirCaracterHijo {
+public class SustituirCaracterHijo {
     public static void realizarSustitucion(String letraOriginal, String nuevaLetra) {
         // Leer el contenido HTML desde la entrada estandar
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
@@ -25,15 +25,16 @@ public class SubstituirCaracterHijo {
                                     letraOriginal.charAt(0), // Aqui se modifica el string a char
                                     nuevaLetra.charAt(0));
 
+
             // Escribir el contenido modificado en encrypted.txt
             escribirArchivo("encrypted.txt", contenidoModificado);
 
             // Enviar mensaje de éxito al proceso padre
             System.out.println("\nArxiu creat amb èxit.");
-            System.out.println("Directorio de trabajo actual: " + System.getProperty("user.dir"));
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error al procesar el archivo.");
+            e.printStackTrace();
         }
     }
 

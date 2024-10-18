@@ -3,23 +3,24 @@ package org.example;
 import java.io.*;
 
 
-import static org.example.emisorPadre.contenidoHTML;
-import static org.example.emisorPadre.sc;
+import static org.example.EmisorPadre.contenidoHTML;
+import static org.example.EmisorPadre.sc;
 
 public class CarregarPaginaWeb {
 
     public static void carregarPaginaWeb() throws IOException, InterruptedException {
 
-        System.out.println("Introduce la URL de la página web (debe comenzar con http:// o https://):");
+        System.out.println("\nIntroduce la URL de la página web (debe comenzar con http:// o https://):");
         System.out.println("Ejemplo: https://paucasesnovescifp.cat/");
         String urlWeb = sc.nextLine().trim();
 
         // Validar la URL
         if (!urlWeb.startsWith("http://") && !urlWeb.startsWith("https://")) {
-            System.out.println("URL inválida. Debe comenzar con http:// o https://");
+            System.out.println("\nURL inválida. Debe comenzar con http:// o https://");
             return; // Terminar el método si la URL es inválida
         } else {
-            System.out.println("----- >> URL Valida << -----\n");
+            System.out.println("\n----- >>          URL Valida           << -----\n");
+            System.out.println("----- >>  Espera un segundo por favor  << -----\n");
         }
 
         // Creamos el proceso hijo

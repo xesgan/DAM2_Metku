@@ -2,18 +2,19 @@ package org.example;
 
 import java.io.*;
 
-import static org.example.emisorPadre.contenidoHTML;
-import static org.example.emisorPadre.sc;
+import static org.example.EmisorPadre.contenidoHTML;
+import static org.example.EmisorPadre.sc;
 
 public class AnalizarNombreCaracter {
 
     public static void analizarNombreCaracter() {
-        System.out.println("\nIntroduce el caracter que deseas contar: ");
+        System.out.println("\n-----------------------------------------------");
+        System.out.println("Introduce el caracter que deseas contar: ");
         String input = sc.nextLine().trim();
 
         // Validar que el usuario haya escrito exactamente un caracter
         if (input.length() != 1) {
-            System.out.println("Entrada invalida. Debe ser solo un caracter.");
+            System.out.println("\nEntrada invalida. Debe ser solo un caracter.");
             return;
         }
 
@@ -37,8 +38,6 @@ public class AnalizarNombreCaracter {
             try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
                 writer.write(caracter);
                 writer.newLine();
-                //writer.write("-"); // Delimitador
-                //writer.newLine();
                 writer.write(contenidoHTML.toString());
                 writer.newLine();
                 writer.flush();
@@ -59,15 +58,16 @@ public class AnalizarNombreCaracter {
 
                 int exitCode = process.waitFor();
                 if (exitCode == 0) {
-                    System.out.println("Número de veces que aparece " + caracter + " : " + resultado.toString().trim() + "\n\n");
+                    System.out.println("Número de veces que aparece " + caracter + " : " + resultado.toString().trim());
+                    System.out.println("-----------------------------------------------\n");
                 } else {
-                    System.out.println("El proceso hijo finalizó con errores.");
+                    System.out.println("\nEl proceso hijo finalizó con errores.");
                     System.out.println(resultado);
                 }
             }
 
         } catch (IOException | InterruptedException e) {
-            System.out.println("Error al ejecutar el proceso hijo.");
+            System.out.println("\nError al ejecutar el proceso hijo.");
             e.printStackTrace();
         }
     }

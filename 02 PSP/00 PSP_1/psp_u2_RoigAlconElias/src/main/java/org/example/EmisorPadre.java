@@ -5,11 +5,15 @@ import java.util.Scanner;
 
 import static org.example.AnalizarNombreCaracter.analizarNombreCaracter;
 import static org.example.CarregarPaginaWeb.carregarPaginaWeb;
-import static org.example.SubstituirLletra.susbtituirLletra;
+import static org.example.EjecutarIndexHtmlPadre.ejecutarIndexHtml;
+import static org.example.LeerEncryptedPadre.leerArchivo;
+import static org.example.BuscarPalabraclavePadre.buscarPalabraClave;
+import static org.example.SustituirLletra.sustituirLetra;
+import static org.example.CrearArchivoEncryptedPadre.crearArchivoIndexHtml;
 
-public class emisorPadre {
+public class EmisorPadre {
     public static Scanner sc = new Scanner(System.in);
-    public static String contenidoHTML = "";
+    public static String contenidoHTML = "";  // Variable global
 
     public static void mostrarMenu() {
         System.out.println(
@@ -39,23 +43,29 @@ public class emisorPadre {
 
             switch (option) {
                 case 1:
-                    carregarPaginaWeb(); // Llamamos a cargar página web
+                    carregarPaginaWeb();
                     break;
                 case 2:
                     analizarNombreCaracter();
                     break;
                 case 3:
-                    susbtituirLletra();
+                    sustituirLetra();
                     break;
                 case 4:
+                    leerArchivo();
                     break;
                 case 5:
+                    buscarPalabraClave();
                     break;
                 case 6:
+                    crearArchivoIndexHtml();
                     break;
                 case 7:
+                    ejecutarIndexHtml();
                     break;
                 case 8:
+                    System.out.println("Saliendo del programa...");
+                    System.exit(0);
                     break;
                 default:
                     break;
