@@ -4,20 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import static org.example.ReceptorHijo.contenidoHTML;
-
 public class ContarCaracterHijo {
-
-    // Contar ocurrencias del caracter en el texto dado
-    /** public static int contarCaracter(String texto){
-        int contador = 0;
-        for (char c : texto.toCharArray()) {
-            if ( c == caracter ) {
-                contador++;
-            }
-        }
-        return contador;
-    } **/
 
     // Operacion que realiza la cuenta del caracter especificado
     public static void contarCaracterOperacion() throws IOException {
@@ -49,14 +36,5 @@ public class ContarCaracterHijo {
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
-
-        /** if (contenidoHTML.isEmpty()) {
-            System.out.println(contenidoHTML);
-            System.out.println("Error: No se pudo descargar el contenido HTML o está vacío.");
-        } else {
-            // Contar el carácter en el contenido HTML
-            int conteo = contarCaracter(contenidoHTML);
-            System.out.println(conteo);  // Imprimir el resultado para que el padre lo capture
-        } **/
     }
 }

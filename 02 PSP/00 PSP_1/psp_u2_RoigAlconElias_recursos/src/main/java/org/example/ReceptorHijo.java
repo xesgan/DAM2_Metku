@@ -40,7 +40,6 @@ public class ReceptorHijo {
                     System.out.println("Debe ingresar un carácter para contar.");
                     System.exit(1);
                 }
-                char caracter = args[1].charAt(0);
                 contarCaracterOperacion();
                 break;
 
@@ -49,8 +48,8 @@ public class ReceptorHijo {
                     System.out.println("Debe ingresar dos caracteres para la sustitución.");
                     System.exit(1);
                 }
-                char letraOriginal = args[1].charAt(0);
-                char nuevaLetra = args[2].charAt(0);
+                String letraOriginal = args[1];
+                String nuevaLetra = args[2];
                 realizarSustitucion(letraOriginal, nuevaLetra);
                 break;
 

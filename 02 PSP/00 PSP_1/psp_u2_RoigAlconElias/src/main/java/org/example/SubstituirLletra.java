@@ -1,9 +1,8 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
+import static org.example.emisorPadre.contenidoHTML;
 import static org.example.emisorPadre.sc;
 
 public class SubstituirLletra {
@@ -35,22 +34,38 @@ public class SubstituirLletra {
 
             Process process = pb.start();
 
+            // Enviamos la entrada al proceso hijo
+            try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
+                bw.write(letraOriginal);
+                bw.newLine();
+                bw.write(nuevaLetra);
+                bw.newLine();
+                //bw.write("-");
+                //bw.newLine();
+                bw.write(contenidoHTML.toString());
+                bw.newLine();
+                bw.flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            process.waitFor();
+
             // Leer la salida del proceso hijo
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String linea;
-            StringBuilder resultado = new StringBuilder();
-            while ((linea = reader.readLine()) != null) {
-                resultado.append(linea).append("\n");
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String linea;
+                StringBuilder resultado = new StringBuilder();
+                while ((linea = br.readLine()) != null) {
+                    resultado.append(linea).append("\n");
+                }
+                int exitCode = process.waitFor();
+                if (exitCode == 0) {
+                    System.out.println("Mensaje del proceso hijo: " + resultado.toString().trim());
+                } else {
+                    System.out.println("El proceso hijo finalizo con errores.");
+                    System.out.println(resultado);
+                }
             }
-
-            int exitCode = process.waitFor();
-            if (exitCode == 0) {
-                System.out.println("Mensaje del proceso hijo: " + resultado.toString().trim());
-            } else {
-                System.out.println("El proceso hijo finalizo con errores.");
-                System.out.println(resultado.toString());
-            }
-
         } catch (IOException | InterruptedException e) {
             System.out.println("Error al ejecutar el proceso hijo.");
             e.printStackTrace();
