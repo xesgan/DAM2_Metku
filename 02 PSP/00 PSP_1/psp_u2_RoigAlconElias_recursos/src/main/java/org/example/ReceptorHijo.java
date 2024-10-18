@@ -2,13 +2,15 @@ package org.example;
 
 import java.io.IOException;
 
+import static org.example.CarregarPaginaWebHijo.descargarHTML;
 import static org.example.CarregarPaginaWebHijo.leerContenidoDesdeEntrada;
 import static org.example.ContarCaracterHijo.contarCaracterOperacion;
 import static org.example.SubstituirCaracterHijo.realizarSustitucion;
 
 public class ReceptorHijo {
+    public static String contenidoHTML = "";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
         if (args.length < 1) {
             System.out.println("Debe especificar un comando.");
             System.exit(1);
@@ -18,8 +20,19 @@ public class ReceptorHijo {
 
         switch (comando) {
             case "cargar":
-                String contenidoHTML = leerContenidoDesdeEntrada();
-                System.out.println("Contenido HTML recibido: " + contenidoHTML);
+                String url = leerContenidoDesdeEntrada();
+                System.out.println("===================================================================");
+                System.out.println("URL recibida por el proceso padre: " + url);  // Mostrar la URL recibida
+
+                String contenidoHTML = descargarHTML(url);
+
+                if (contenidoHTML == null || contenidoHTML.isEmpty()) {
+                    System.out.println("\nError: No se pudo descargar el contenido HTML o está vacío.");
+                } else {
+                    System.out.println("\nContenido HTML descargado correctamente:" + "\n");
+                    System.out.println(contenidoHTML);
+                }
+                System.out.println("\n===================================================================");
                 break;
 
             case "contar":
@@ -28,7 +41,7 @@ public class ReceptorHijo {
                     System.exit(1);
                 }
                 char caracter = args[1].charAt(0);
-                ContarCaracterHijo.contarCaracterOperacion(caracter);
+                contarCaracterOperacion();
                 break;
 
             case "substituir":

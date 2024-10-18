@@ -8,7 +8,7 @@ import static org.example.emisorPadre.sc;
 public class AnalizarNombreCaracter {
 
     public static void analizarNombreCaracter() {
-        System.out.println("Introduce el caracter que deseas contar: ");
+        System.out.println("\nIntroduce el caracter que deseas contar: ");
         String input = sc.nextLine().trim();
 
         // Validar que el usuario haya escrito exactamente un caracter
@@ -33,12 +33,21 @@ public class AnalizarNombreCaracter {
 
             Process process = pb.start();
 
-            // Enviar el HTML al proceso hijo a través de la entrada estándar
+            // Enviamos los datos al proceso hijo
             try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
-                writer.write(contenidoHTML.toString());  // Enviar el HTML al hijo
+                writer.write(caracter);
+                writer.newLine();
+                writer.write("-"); // Delimitador
+                writer.newLine();
+                writer.write(contenidoHTML.toString());
                 writer.newLine();
                 writer.flush();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
+
+            process.waitFor();
+
 
             // Leer la salida del proceso hijo
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
@@ -50,7 +59,7 @@ public class AnalizarNombreCaracter {
 
                 int exitCode = process.waitFor();
                 if (exitCode == 0) {
-                    System.out.println("Número de veces que aparece " + caracter + " : " + resultado.toString().trim() + "\n\n\n");
+                    System.out.println("Número de veces que aparece " + caracter + " : " + resultado.toString().trim() + "\n\n");
                 } else {
                     System.out.println("El proceso hijo finalizó con errores.");
                     System.out.println(resultado);

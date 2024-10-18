@@ -7,23 +7,22 @@ import static org.example.AnalizarNombreCaracter.analizarNombreCaracter;
 import static org.example.CarregarPaginaWeb.carregarPaginaWeb;
 import static org.example.SubstituirLletra.susbtituirLletra;
 
-
 public class emisorPadre {
     public static Scanner sc = new Scanner(System.in);
     public static String contenidoHTML = "";
 
-
     public static void mostrarMenu() {
-        System.out.println("1. Carregar pàgina Web");
-        System.out.println("2. Analitzar el nombre de caràcters");
-        System.out.println("3. Substituir lletra");
-        System.out.println("4. Llegir encrypted.txt");
-        System.out.println("5. Cercar paraules clau");
-        System.out.println("6. Crear arxiu index.html");
-        System.out.println("7. Ejecutar arxiu index.html");
-        System.out.println("8. Sortir");
+        System.out.println(
+                "=== MENU ===\n" +
+                "1. Carregar pàgina Web\n" +
+                "2. Analitzar el nombre de caràcters\n" +
+                "3. Substituir lletra\n" +
+                "4. Llegir encrypted.txt\n" +
+                "5. Cercar paraules clau\n" +
+                "6. Crear arxiu index.html\n" +
+                "7. Ejecutar arxiu index.html\n" +
+                "8. Sortir");
     }
-
 
     public static void main(String[] args) throws IOException, InterruptedException {
         while (true) {
@@ -40,12 +39,9 @@ public class emisorPadre {
 
             switch (option) {
                 case 1:
-                    carregarPaginaWeb();
+                    carregarPaginaWeb(); // Llamamos a cargar página web
                     break;
                 case 2:
-                    if (contenidoHTML.isEmpty()) {
-                        System.out.println("No hay contenido HTML disponible. Por favor, carga una página web primero (opción 1).");
-                    }
                     analizarNombreCaracter();
                     break;
                 case 3:
@@ -64,7 +60,6 @@ public class emisorPadre {
                 default:
                     break;
             }
-
         }
     }
 }
