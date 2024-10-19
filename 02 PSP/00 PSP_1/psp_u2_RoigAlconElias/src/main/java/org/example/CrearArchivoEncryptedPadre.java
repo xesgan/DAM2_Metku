@@ -2,8 +2,25 @@ package org.example;
 
 import java.io.*;
 import java.util.Scanner;
-
 import static org.example.SustituirLletra.sustituirLetra;
+
+/**
+ * Clase que implementa la funcionalidad para crear un archivo index.html a partir de un archivo encriptado.
+ *
+ * Esta clase proporciona las siguientes funcionalidades:
+ * <ul>
+ *   <li>Verificar la existencia del archivo encrypted.txt</li>
+ *   <li>Ofrecer la opción de generar el archivo encrypted.txt si no existe</li>
+ *   <li>Ejecutar un proceso hijo para crear el archivo index.html</li>
+ *   <li>Manejar la comunicación entre el proceso padre y el proceso hijo</li>
+ * </ul>
+ *
+ * La clase utiliza ProcessBuilder para ejecutar el proceso hijo y gestiona
+ * la entrada/salida entre los procesos para crear el archivo index.html.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
 
 public class CrearArchivoEncryptedPadre {
     public static void crearArchivoIndexHtml() throws IOException {
@@ -11,8 +28,8 @@ public class CrearArchivoEncryptedPadre {
 
         // Verificar si el archivo encrypted.txt existe
         if (!archivoEncrypted.exists()) {
-            System.out.println("El archivo encrypted.txt no existe.");
-            System.out.println("¿Deseas realizar la opción 3 (Sustitución de caracteres) para generarlo? (S/N)");
+            System.out.println("\n [[ El archivo encrypted.txt no existe. ]]\n");
+            System.out.println("[[ ¿Deseas realizar la opción 3 (Sustitución de caracteres) para generarlo? (S/N) ]]\n");
             Scanner sc = new Scanner(System.in);
             String respuesta = sc.nextLine().trim().toUpperCase();
 
@@ -20,7 +37,7 @@ public class CrearArchivoEncryptedPadre {
                 // Llamar a la opción 3 para realizar la sustitución
                 sustituirLetra();  // Aqui reutilice el codigo por lo que tuve que separar en clases
             } else {
-                System.out.println("Operación cancelada. No se puede continuar sin el archivo encrypted.txt.");
+                System.out.println("\n [[ Operación cancelada. No se puede continuar sin el archivo encrypted.txt. ]]\n");
                 return;
             }
         }

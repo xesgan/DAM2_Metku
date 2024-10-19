@@ -6,6 +6,24 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Clase que crea un archivo index.html a partir del contenido de un archivo encrypted.txt.
+ *
+ * Esta clase proporciona las siguientes funcionalidades:
+ * <ul>
+ *   <li>Leer un archivo encrypted.txt</li>
+ *   <li>Extraer el contenido del cuerpo (body) del archivo HTML</li>
+ *   <li>Crear un nuevo archivo index.html con el contenido extraído</li>
+ * </ul>
+ *
+ * La clase utiliza BufferedReader para leer el archivo de entrada y BufferedWriter
+ * para escribir el nuevo archivo HTML. También incluye un método auxiliar para
+ * extraer el contenido entre las etiquetas <body> del archivo de entrada.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
+
 public class CrearIndexHtmlHijo {
     public static void crearIndexHtml() {
         String rutaArchivoEncrypted = "../psp_u2_RoigAlconElias/encrypted.txt";

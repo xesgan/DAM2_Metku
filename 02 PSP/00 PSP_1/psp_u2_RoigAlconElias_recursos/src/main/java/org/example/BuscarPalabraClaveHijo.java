@@ -4,6 +4,23 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Clase que implementa la funcionalidad de buscar una palabra clave en un archivo.
+ *
+ * Esta clase proporciona las siguientes funcionalidades:
+ * <ul>
+ *   <li>Buscar una palabra clave en un archivo de texto</li>
+ *   <li>Contar el número de ocurrencias de la palabra clave</li>
+ *   <li>Mostrar el resultado de la búsqueda</li>
+ * </ul>
+ *
+ * La clase utiliza un BufferedReader para leer el archivo línea por línea,
+ * y un método auxiliar para contar las ocurrencias de la palabra clave en cada línea.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
+
 public class BuscarPalabraClaveHijo {
 
     // Método que busca la palabra clave en el archivo

@@ -1,7 +1,6 @@
 package org.example;
 
 import java.io.IOException;
-
 import static org.example.BuscarPalabraClaveHijo.buscarPalabraClave;
 import static org.example.CarregarPaginaWebHijo.descargarHTML;
 import static org.example.CarregarPaginaWebHijo.leerContenidoDesdeEntrada;
@@ -9,6 +8,26 @@ import static org.example.ContarCaracterHijo.contarCaracterOperacion;
 import static org.example.CrearIndexHtmlHijo.crearIndexHtml;
 import static org.example.LeerEncryptedHijo.leerArchivoEncriptado;
 import static org.example.SustituirCaracterHijo.realizarSustitucion;
+
+/**
+ * Clase principal que implementa un programa de menú interactivo para manejar páginas web y archivos.
+ *
+ * Esta clase proporciona las siguientes funcionalidades:
+ * <ul>
+ *   <li>Cargar una página web</li>
+ *   <li>Analizar el número de caracteres en un texto</li>
+ *   <li>Sustituir letras en un texto</li>
+ *   <li>Leer un archivo encriptado</li>
+ *   <li>Buscar palabras clave en un texto</li>
+ *   <li>Crear un archivo index.html</li>
+ * </ul>
+ *
+ * El programa utiliza un switch para ejecutar la funcionalidad correspondiente
+ * basándose en los argumentos de línea de comandos proporcionados.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
 
 public class ReceptorHijo {
 
@@ -23,8 +42,6 @@ public class ReceptorHijo {
         switch (comando) {
             case "cargar":
                 String url = leerContenidoDesdeEntrada();
-
-
                 String contenidoHTML = descargarHTML(url);
 
                 if (contenidoHTML == null || contenidoHTML.isEmpty()) {

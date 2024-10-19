@@ -8,6 +8,26 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+/**
+ * Clase que implementa funcionalidades para cargar y procesar páginas web.
+ *
+ * Esta clase proporciona las siguientes funcionalidades:
+ * <ul>
+ *   <li>Leer una URL desde la entrada estándar</li>
+ *   <li>Descargar el contenido HTML de una página web</li>
+ * </ul>
+ *
+ * La clase utiliza HttpClient para realizar solicitudes HTTP y manejar las respuestas.
+ *
+ * En el método descargarHTML, se utiliza el código de estado HTTP 200 para verificar
+ * si la solicitud fue exitosa. El código 200 indica que la solicitud fue recibida,
+ * entendida y aceptada correctamente por el servidor. Solo si se recibe este código,
+ * se procede a devolver el contenido HTML de la página.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
+
 public class CarregarPaginaWebHijo{
 
     public static String leerContenidoDesdeEntrada() {

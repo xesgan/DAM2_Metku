@@ -5,6 +5,23 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Clase que maneja la ejecución de un archivo index.html.
+ *
+ * Esta clase proporciona funcionalidad para:
+ * <ul>
+ *   <li>Verificar la existencia de un archivo index.html</li>
+ *   <li>Crear el archivo index.html si no existe</li>
+ *   <li>Abrir el archivo index.html en el navegador predeterminado del sistema</li>
+ * </ul>
+ *
+ * La clase utiliza la clase Desktop de Java para abrir el archivo en el navegador
+ * y maneja las excepciones que puedan ocurrir durante este proceso.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
+
 public class EjecutarIndexHtmlPadre {
 
     public static void ejecutarIndexHtml() {

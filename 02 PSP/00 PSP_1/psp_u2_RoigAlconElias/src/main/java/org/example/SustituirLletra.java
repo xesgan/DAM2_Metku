@@ -5,6 +5,23 @@ import java.io.*;
 import static org.example.Programa.contenidoHTML;
 import static org.example.Programa.sc;
 
+/**
+ * Clase que maneja la funcionalidad de sustitución de letras en un texto.
+ *
+ * Esta clase proporciona métodos para:
+ * <ul>
+ *   <li>Validar la entrada del usuario para la sustitución de letras</li>
+ *   <li>Realizar la sustitución de letras en el texto</li>
+ *   <li>Ejecutar un proceso hijo para llevar a cabo la sustitución</li>
+ * </ul>
+ *
+ * La clase utiliza un proceso hijo para realizar la sustitución real,
+ * comunicándose con él a través de entrada/salida estándar.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
+
 public class SustituirLletra {
 
     public static void sustituirLetra() {
@@ -25,7 +42,7 @@ public class SustituirLletra {
 
         // Validar que ambas entradas sean de un solo caracter
         if (letraOriginal.length() != 1 || nuevaLetra.length() != 1) {
-            System.out.println("\nEntrada invalida. Solo una letra por entrada.");
+            System.out.println("\n[[ Entrada invalida. Solo una letra por entrada. ]] \n");
             return null;
         }
         return new String[] {letraOriginal, nuevaLetra};

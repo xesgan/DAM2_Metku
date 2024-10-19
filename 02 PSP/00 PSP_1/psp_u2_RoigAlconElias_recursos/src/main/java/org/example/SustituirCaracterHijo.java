@@ -6,6 +6,23 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * Clase que implementa la funcionalidad de sustituir un carácter por otro en un texto.
+ *
+ * Esta clase proporciona las siguientes funcionalidades:
+ * <ul>
+ *   <li>Realizar la sustitución de un carácter por otro en un texto</li>
+ *   <li>Leer contenido HTML desde la entrada estándar</li>
+ *   <li>Escribir el contenido modificado en un archivo</li>
+ * </ul>
+ *
+ * La clase utiliza métodos para procesar el texto, realizar la sustitución
+ * y manejar la entrada/salida de archivos.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
+
 public class SustituirCaracterHijo {
     public static void realizarSustitucion(String letraOriginal, String nuevaLetra) {
         // Leer el contenido HTML desde la entrada estandar

@@ -3,8 +3,26 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 import static org.example.Programa.sc;
+
+/**
+ * Clase que implementa la funcionalidad de búsqueda de palabras clave en un archivo.
+ *
+ * Esta clase proporciona un método estático para buscar una palabra clave específica
+ * en un archivo utilizando un proceso hijo. Las principales funcionalidades incluyen:
+ * <ul>
+ *   <li>Solicitar al usuario una palabra clave para buscar</li>
+ *   <li>Validar la entrada del usuario</li>
+ *   <li>Ejecutar un proceso hijo para realizar la búsqueda</li>
+ *   <li>Mostrar los resultados de la búsqueda</li>
+ * </ul>
+ *
+ * El método utiliza ProcessBuilder para crear y ejecutar un proceso hijo que realiza
+ * la búsqueda real en el archivo.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
 
 public class BuscarPalabraclavePadre {
     public static void buscarPalabraClave() {
@@ -14,7 +32,7 @@ public class BuscarPalabraclavePadre {
 
         // Validar que sea una única palabra (sin espacios)
         if (palabraClave.isEmpty() || palabraClave.contains(" ")) {
-            System.out.println("\nError: Debes introducir una única palabra sin espacios.");
+            System.out.println("\n[[ Error: Debes introducir una única palabra sin espacios. ]]\n");
             return;
         }
 

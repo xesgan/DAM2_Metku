@@ -1,9 +1,29 @@
 package org.example;
 
 import java.io.*;
-
 import static org.example.Programa.contenidoHTML;
 import static org.example.Programa.sc;
+
+/**
+ * Clase que proporciona funcionalidad para analizar la frecuencia de un carácter específico
+ * en el contenido HTML de una página web previamente cargada.
+ *
+ * Esta clase ofrece las siguientes funcionalidades:
+ * <ul>
+ *   <li>Verificar si hay contenido HTML cargado</li>
+ *   <li>Solicitar al usuario un carácter para analizar</li>
+ *   <li>Validar la entrada del usuario</li>
+ *   <li>Ejecutar un proceso hijo para contar la frecuencia del carácter</li>
+ *   <li>Comunicar datos entre el proceso padre y el hijo</li>
+ *   <li>Mostrar los resultados del análisis</li>
+ * </ul>
+ *
+ * La clase utiliza ProcessBuilder para crear y manejar un proceso hijo que realiza el conteo de caracteres,
+ * permitiendo una ejecución eficiente y separada de esta tarea.
+ *
+ * @author [xesgan - Elias Roig]
+ * @version 1.0
+ */
 
 public class AnalizarNombreCaracter {
 
@@ -20,7 +40,7 @@ public class AnalizarNombreCaracter {
 
         // Validar que el usuario haya escrito exactamente un caracter
         if (input.length() != 1) {
-            System.out.println("\nEntrada invalida. Debe ser solo un caracter.");
+            System.out.println("\n[[ Entrada invalida. Debe ser solo un caracter. ]]\n");
             return;
         }
 
