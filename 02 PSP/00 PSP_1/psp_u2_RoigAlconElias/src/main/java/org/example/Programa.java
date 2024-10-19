@@ -5,18 +5,13 @@ import java.util.Scanner;
 
 import static org.example.AnalizarNombreCaracter.analizarNombreCaracter;
 import static org.example.CarregarPaginaWeb.carregarPaginaWeb;
-<<<<<<< HEAD:02 PSP/00 PSP_1/psp_u2_RoigAlconElias/src/main/java/org/example/EmisorPadre.java
 import static org.example.EjecutarIndexHtmlPadre.ejecutarIndexHtml;
 import static org.example.LeerEncryptedPadre.leerArchivo;
 import static org.example.BuscarPalabraclavePadre.buscarPalabraClave;
 import static org.example.SustituirLletra.sustituirLetra;
 import static org.example.CrearArchivoEncryptedPadre.crearArchivoIndexHtml;
-=======
-import static org.example.LeerEncryptedPadre.leerArchivo;
-import static org.example.SubstituirLletra.susbtituirLletra;
->>>>>>> f633b9ef417cfd1e258db11d199d96b63b52e2de:02 PSP/00 PSP_1/psp_u2_RoigAlconElias/src/main/java/org/example/emisorPadre.java
 
-public class EmisorPadre {
+public class Programa {
     public static Scanner sc = new Scanner(System.in);
     public static String contenidoHTML = "";  // Variable global
 

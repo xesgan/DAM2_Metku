@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import static org.example.EmisorPadre.sc;
+import static org.example.Programa.sc;
 
 public class BuscarPalabraclavePadre {
     public static void buscarPalabraClave() {

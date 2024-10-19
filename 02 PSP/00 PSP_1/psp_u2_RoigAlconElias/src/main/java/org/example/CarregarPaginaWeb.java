@@ -3,8 +3,8 @@ package org.example;
 import java.io.*;
 
 
-import static org.example.EmisorPadre.contenidoHTML;
-import static org.example.EmisorPadre.sc;
+import static org.example.Programa.contenidoHTML;
+import static org.example.Programa.sc;
 
 public class CarregarPaginaWeb {
 
