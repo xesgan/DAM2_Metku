@@ -8,14 +8,14 @@ import java.nio.file.Paths;
 
 /**
  * Clase que implementa la funcionalidad de sustituir un carácter por otro en un texto.
- *
+ * <p>
  * Esta clase proporciona las siguientes funcionalidades:
  * <ul>
  *   <li>Realizar la sustitución de un carácter por otro en un texto</li>
  *   <li>Leer contenido HTML desde la entrada estándar</li>
  *   <li>Escribir el contenido modificado en un archivo</li>
  * </ul>
- *
+ * <p>
  * La clase utiliza métodos para procesar el texto, realizar la sustitución
  * y manejar la entrada/salida de archivos.
  *
@@ -35,12 +35,11 @@ public class SustituirCaracterHijo {
                 contenido.append(line).append("\n");
             }
 
-
             // Llamar al metodo para realizar la sustitucion
             String contenidoModificado =
                     sustituirLetra(contenido.toString(),
-                                    letraOriginal.charAt(0), // Aqui se modifica el string a char
-                                    nuevaLetra.charAt(0));
+                            letraOriginal.charAt(0), // Aqui se modifica el string a char
+                            nuevaLetra.charAt(0));
 
 
             // Escribir el contenido modificado en encrypted.txt
