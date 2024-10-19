@@ -54,7 +54,6 @@ public class ReceptorHijo {
                 realizarSustitucion(letraOriginal, nuevaLetra);
                 break;
             case "leer":
-<<<<<<< HEAD
                 String archivo = "encrypted.txt"; // Puedes cambiarlo si usas otro nombre de archivoPalabraClave
                 leerArchivoEncriptado(archivo);
                 break;
@@ -71,12 +70,6 @@ public class ReceptorHijo {
                 // Aquí llamamos al método que crea el archivo index.html
                 crearIndexHtml();
                 break;
-=======
-                String archivo = "encrypted.txt"; // Puedes cambiarlo si usas otro nombre de archivo
-                LeerEncryptedHijo.leerArchivoEncriptado(archivo);
-                break;
-
->>>>>>> f633b9ef417cfd1e258db11d199d96b63b52e2de
             default:
                 System.out.println("Comando desconocido: " + comando);
                 System.out.println("Comandos disponibles: cargar, contar, substituir");

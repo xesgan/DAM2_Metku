@@ -8,6 +8,12 @@ import static org.example.Programa.sc;
 public class AnalizarNombreCaracter {
 
     public static void analizarNombreCaracter() {
+
+        if (contenidoHTML.isEmpty()) {
+            System.out.println("\n - - [[ Primer tens que carregar una página web (opción 1). ]] - -\n");
+            return;
+        }
+
         System.out.println("\n-----------------------------------------------");
         System.out.println("Introduce el caracter que deseas contar: ");
         String input = sc.nextLine().trim();
@@ -37,6 +43,8 @@ public class AnalizarNombreCaracter {
             // Enviamos los datos al proceso hijo
             try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
                 writer.write(caracter);
+                writer.newLine();
+                writer.write("-"); // Delimitador
                 writer.newLine();
                 writer.write(contenidoHTML.toString());
                 writer.newLine();
