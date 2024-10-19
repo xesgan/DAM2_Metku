@@ -15,10 +15,17 @@ public class LeerEncryptedHijo {
             }
 
             // Mostrar el contenido del archivo en la consola
+<<<<<<< HEAD
             System.out.println("\n - - - > Contenido de " + archivo + " < - - - \n" + contenido);
 
         } catch (IOException e) {
             System.out.println("\nError al leer el archivo: " + archivo);
+=======
+            System.out.println("Contenido de " + archivo + ":");
+            System.out.println(contenido);
+        } catch (IOException e) {
+            System.out.println("Error al leer el archivo: " + archivo);
+>>>>>>> f633b9ef417cfd1e258db11d199d96b63b52e2de
             e.printStackTrace();
         }
     }
