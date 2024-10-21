@@ -64,8 +64,6 @@ public class AnalizarNombreCaracter {
             try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
                 writer.write(caracter);
                 writer.newLine();
-                writer.write("-"); // Delimitador
-                writer.newLine();
                 writer.write(contenidoHTML.toString());
                 writer.newLine();
                 writer.flush();

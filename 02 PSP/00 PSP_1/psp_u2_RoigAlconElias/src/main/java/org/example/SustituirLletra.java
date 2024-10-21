@@ -69,6 +69,8 @@ public class SustituirLletra {
                 bw.newLine();
                 bw.write(nuevaLetra);
                 bw.newLine();
+                bw.write("-"); // Delimitador
+                bw.newLine();
                 bw.write(contenidoHTML.toString());
                 bw.newLine();
                 bw.flush();

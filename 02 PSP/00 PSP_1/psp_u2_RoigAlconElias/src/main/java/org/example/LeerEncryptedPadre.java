@@ -45,7 +45,6 @@ public class LeerEncryptedPadre {
                 int exitCode = process.waitFor();
                 if (exitCode != 0) {
                     System.out.println("\nEl proceso hijo finalizó con errores.");
-                    System.out.println("El proceso hijo finalizó con errores.");
                 }
             }
         } catch (IOException | InterruptedException e) {

@@ -28,7 +28,7 @@ import static org.example.Programa.sc;
 
 public class CarregarPaginaWeb {
 
-    public static void carregarPaginaWeb() throws IOException, InterruptedException {
+    public static void carregarPaginaWeb() throws IOException {
 
         System.out.println("\nIntroduce la URL de la página web (debe comenzar con http:// o https://):");
         System.out.println("Ejemplo: https://paucasesnovescifp.cat/");
@@ -40,7 +40,7 @@ public class CarregarPaginaWeb {
             return; // Terminar el método si la URL es inválida
         } else {
             System.out.println("\n----- >>          URL Valida           << -----\n");
-            System.out.println("----- >>  Espera un segundo por favor  << -----\n");
+            System.out.println("----- >>  Espera por favor...  << -----\n");
         }
 
         // Creamos el proceso hijo

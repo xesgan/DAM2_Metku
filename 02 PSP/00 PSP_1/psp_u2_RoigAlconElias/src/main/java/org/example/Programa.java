@@ -48,7 +48,7 @@ public class Programa {
                 "8. Sortir");
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException {
         while (true) {
             mostrarMenu();
             System.out.println("\nElige una opcion");

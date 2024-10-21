@@ -26,20 +26,15 @@ import java.io.InputStreamReader;
 public class ContarCaracterHijo {
 
     // Operacion que realiza la cuenta del caracter especificado
-    public static void contarCaracterOperacion() throws IOException {
+    public static void contarCaracterOperacion() {
         // Leer contenido HTML desde la entrada estándar
         try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             String caracter = br.readLine();
-            String delimitador = br.readLine();
-
             // Leer el contenido HTML
             StringBuilder letraHTML = new StringBuilder();
             String linea;
 
             while ((linea = br.readLine()) != null) {
-                if (linea.equals(delimitador)) { // Comprobamos el delimitador
-                    break; // Salimos del bucle si encontramos el delimitador
-                }
                 letraHTML.append(linea).append("\n");
             }
 

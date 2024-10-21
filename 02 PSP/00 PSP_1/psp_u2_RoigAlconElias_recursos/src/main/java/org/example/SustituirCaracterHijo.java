@@ -27,12 +27,19 @@ public class SustituirCaracterHijo {
     public static void realizarSustitucion(String letraOriginal, String nuevaLetra) {
         // Leer el contenido HTML desde la entrada estandar
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            letraOriginal = br.readLine();
+            nuevaLetra = br.readLine();
+            String delimitador = br.readLine();
+
             StringBuilder contenido = new StringBuilder();
-            String line;
+            String linea;
 
             // Leer el contenido HTML desde la entrada estándar
-            while ((line = br.readLine()) != null) {
-                contenido.append(line).append("\n");
+            while ((linea = br.readLine()) != null) {
+                if (linea.equals(delimitador)) { // Comprobamos el delimitador
+                    break; // Salimos del bucle si encontramos el delimitador
+                }
+                contenido.append(linea).append("\n");
             }
 
             // Llamar al metodo para realizar la sustitucion
