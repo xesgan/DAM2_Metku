@@ -65,10 +65,10 @@ public class SustituirLletra {
 
             // Enviamos la entrada al proceso hijo
             try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()))) {
-                bw.write(letraOriginal);
+                /*bw.write(letraOriginal);
                 bw.newLine();
-                bw.write(nuevaLetra);
-                bw.newLine();
+                bw.write(nuevaLetra); // Entiendo que deberia ser asi, pero no lo consegui.
+                bw.newLine(); */
                 bw.write("-"); // Delimitador
                 bw.newLine();
                 bw.write(contenidoHTML.toString());
