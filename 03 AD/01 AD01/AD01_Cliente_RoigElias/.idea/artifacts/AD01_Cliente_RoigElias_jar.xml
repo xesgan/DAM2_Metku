@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="AD01_Cliente_RoigElias:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AD01_Cliente_RoigElias_jar</output-path>
+    <root id="root">
+      <element id="archive" name="AD01_Cliente_RoigElias.jar">
+        <element id="module-output" name="AD01_Cliente_RoigElias" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/../AD01_RoigElias/out/artifacts/AD01_RoigElias_jar/AD01_RoigElias.jar" />
+    </root>
+  </artifact>
+</component>
